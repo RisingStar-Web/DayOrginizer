@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sVB-4C-TtU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sVB-4C-TtU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <containerView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="e64-aT-Oml">
+                        <containerView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" misplaced="YES" id="e64-aT-Oml">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <connections>
@@ -50,7 +49,7 @@
                                             </variation>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MFh-GG-Kgk">
-                                            <rect key="frame" x="536" y="27" width="15" height="15"/>
+                                            <rect key="frame" x="536" y="27.5" width="15" height="15"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="15" id="Hxm-SB-zcC"/>
@@ -60,8 +59,8 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYf-ep-9zg">
-                                            <rect key="frame" x="552" y="27" width="15" height="15"/>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <rect key="frame" x="552" y="27.5" width="15" height="15"/>
+                                            <color key="backgroundColor" red="0.1962971687" green="0.84441775080000003" blue="0.29615724090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="15" id="LhZ-R9-hPA"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="aqz-Ho-KKv"/>
@@ -70,7 +69,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wic-dZ-UOv">
-                                            <rect key="frame" x="568" y="27" width="15" height="15"/>
+                                            <rect key="frame" x="568" y="27.5" width="15" height="15"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="HIk-Xq-ulI"/>
@@ -243,6 +242,7 @@
                                     <segment title="По времени"/>
                                     <segment title="По важности"/>
                                 </segments>
+                                <color key="tintColor" red="0.91764705879999997" green="0.43137254899999999" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="topSegmentSelected:" destination="7Kh-dc-IG5" eventType="valueChanged" id="rWN-xq-X6c"/>
                                 </connections>

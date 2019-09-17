@@ -18,7 +18,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.cherta.backgroundColor = [UIColor colorWithRed:0.46 green:0.44 blue:0.42 alpha:1];
+    self.cherta.backgroundColor = [UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
     _flag = 0;
     self.singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                              action:@selector(oneTapAction:)];

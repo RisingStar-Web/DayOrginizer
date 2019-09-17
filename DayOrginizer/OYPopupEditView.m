@@ -67,7 +67,7 @@
        
         self.segmented = [[UISegmentedControl alloc] initWithFrame:rect];
         self.segmented =  [self.segmented initWithItems:segments];
-        self.segmented.tintColor = [UIColor colorWithRed:0.55 green:0.79 blue:0.43 alpha:1];
+        self.segmented.tintColor = [UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
         self.segmented.selectedSegmentIndex = 1;
         [OYManager sharedManager].segmented = self.segmented;
         
@@ -101,7 +101,7 @@
         _closeButton.frame = frame;
         [_closeButton setTitle:NSLocalizedString(@"Закрыть", nil)
                       forState:UIControlStateNormal];
-        _closeButton.tintColor = [UIColor colorWithRed:0.55 green:0.79 blue:0.43 alpha:1];
+        _closeButton.tintColor = [UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
         // Добавляем Action для кнопки, чтобы обработать
         // событие, когда пользователь на нее нажмет и отпустит
         [_closeButton addTarget:self

@@ -30,7 +30,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.backgroundColor = [UIColor colorWithRed:0.71 green:0.86 blue:0.66 alpha:1];
+    self.tableView.backgroundColor = [UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
     [[OYManager sharedManager] load];
     self.choosedDate = [NSDate new];
     [OYManager sharedManager].freshTop.topSegment.selectedSegmentIndex = [OYManager sharedManager].dateOrPriotity.integerValue;
@@ -208,19 +208,19 @@
 //            nil;
 //        }];
 //
-        cell.backgroundColor = [UIColor colorWithRed:0.92 green:0.94 blue:0.68 alpha:1];
+        cell.backgroundColor = [UIColor colorWithRed:0.8 green:0.7 blue:0 alpha:1];
         if (task.priority.integerValue == 0) {
-            cell.ptiority1.backgroundColor = [UIColor colorWithRed:0.71 green:0.86 blue:0.66 alpha:1];
+            cell.ptiority1.backgroundColor = [UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
             cell.priority2.backgroundColor = cell.backgroundColor;
             cell.priority3.backgroundColor = cell.backgroundColor;
         }else if (task.priority.integerValue == 1){
-            cell.ptiority1.backgroundColor = [UIColor colorWithRed:0.71 green:0.86 blue:0.66 alpha:1];
-            cell.priority2.backgroundColor = [UIColor colorWithRed:0.71 green:0.86 blue:0.66 alpha:1];
+            cell.ptiority1.backgroundColor = [UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
+            cell.priority2.backgroundColor = [UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
             cell.priority3.backgroundColor = cell.backgroundColor;
         }else{
-            cell.ptiority1.backgroundColor = [UIColor colorWithRed:0.71 green:0.86 blue:0.66 alpha:1];
-            cell.priority2.backgroundColor = [UIColor colorWithRed:0.71 green:0.86 blue:0.66 alpha:1];
-            cell.priority3.backgroundColor =[UIColor colorWithRed:0.71 green:0.86 blue:0.66 alpha:1];
+            cell.ptiority1.backgroundColor = [UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
+            cell.priority2.backgroundColor = [UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
+            cell.priority3.backgroundColor =[UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
         }
 
         //   cell.priority.backgroundColor = [UIColor blackColor];

@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.topSegment.tintColor = [UIColor colorWithRed:0.71 green:0.86 blue:0.66 alpha:1];
+    self.topSegment.tintColor = [UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
     self.view.backgroundColor = [UIColor colorWithRed:0.96 green:0.95 blue:0.92 alpha:1];
     
     [OYManager sharedManager].freshTop = self;
@@ -44,8 +44,8 @@
     [fmt setDateFormat:@"dd.MM"];
     NSString* tomorrowString = [NSString stringWithFormat:@"%@",[fmt stringFromDate:tomorrow]];
     NSString* yesterdayString = [NSString stringWithFormat:@"%@",[fmt stringFromDate:yesterday]];
-    self.nextButton.tintColor = [UIColor colorWithRed:0.55 green:0.79 blue:0.43 alpha:1];
-    self.prevButton.tintColor = [UIColor colorWithRed:0.55 green:0.79 blue:0.43 alpha:1];
+    self.nextButton.tintColor = [UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
+    self.prevButton.tintColor = [UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
     [self.nextButton setTitle:tomorrowString forState:UIControlStateNormal];
     [self.prevButton setTitle:yesterdayString forState:UIControlStateNormal];
 }
@@ -158,7 +158,7 @@
     frame.size.width = frame.size.width*_allPercent/100;
     [UIView animateWithDuration:1.0 animations:^{
         [self.allLabe setFrame:frame];
-        self.allLabe.backgroundColor = [UIColor colorWithRed:0.92 green:0.94 blue:0.68 alpha:1];
+        self.allLabe.backgroundColor = [UIColor colorWithRed:0.2 green:0.4 blue:0.5 alpha:1];
 
 
     }];
@@ -170,7 +170,7 @@
     frame1.size.width = frame1.size.width*_priorityPercent/100;
     [UIView animateWithDuration:1.0 animations:^{
         [self.priorityLabel setFrame:frame1];
-        self.priorityLabel.backgroundColor = [UIColor colorWithRed:0.71 green:0.86 blue:0.66 alpha:1];
+        self.priorityLabel.backgroundColor = [UIColor colorWithRed:0.5 green:0.4 blue:0.2 alpha:1];
        
         
     }];
